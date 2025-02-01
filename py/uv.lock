@@ -897,6 +897,20 @@ wheels = [
 name = "handlebarz"
 version = "0.1.0"
 source = { editable = "packages/handlebarz" }
+dependencies = [
+    { name = "sly" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "pytest" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "sly", git = "https://github.com/dabeaz/sly?branch=master" }]
+
+[package.metadata.requires-dev]
+dev = [{ name = "pytest", specifier = ">=8.3.4" }]
 
 [[package]]
 name = "hello"
@@ -2194,6 +2208,11 @@ sdist = { url = "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274", size = 11050 },
 ]
+
+[[package]]
+name = "sly"
+version = "0.5"
+source = { git = "https://github.com/dabeaz/sly?branch=master#539a85a5d5818bf4e1cb5a9e749d6e2fab70a351" }
 
 [[package]]
 name = "sniffio"

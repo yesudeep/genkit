@@ -17,7 +17,7 @@ classifiers = [
   "Topic :: Software Development :: Libraries :: Python Modules",
   "Topic :: Text Processing :: Markup",
 ]
-dependencies = []
+dependencies = ["sly"]
 description = "Python implementation for Handlebars.js"
 license = { text = "Apache-2.0" }
 name = "handlebarz"
@@ -31,3 +31,9 @@ requires      = ["hatchling"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/handlebarz"]
+
+[tool.uv.sources]
+sly = { git = "https://github.com/dabeaz/sly", branch = "master" }
+
+[dependency-groups]
+dev = ["pytest>=8.3.4"]
