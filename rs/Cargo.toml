@@ -1,0 +1,16 @@
+[workspace]
+resolver = "2"
+members = [
+    "genkit",
+    "samples/*",
+    "plugins/*",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+authors = ["Yesudeep Mangalapilly <yesudeep@google.com>"]
+license = "Apache-2.0"
+
+[workspace.dependencies]
+# Common dependencies for the workspace can be defined here

@@ -1,0 +1,16 @@
+[package]
+name = "genkit-plugin-google-cloud"
+version = { workspace = true }
+edition = { workspace = true }
+authors = { workspace = true }
+license = { workspace = true }
+publish = false
+
+[lib]
+name = "genkit_plugin_google_cloud"
+path = "src/lib.rs"
+
+[dependencies]
+genkit = { path = "../../genkit" }
+
+# Add plugin-specific dependencies here (e.g., Google Cloud SDKs)

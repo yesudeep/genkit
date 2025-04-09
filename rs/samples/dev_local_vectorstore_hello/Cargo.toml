@@ -1,0 +1,13 @@
+[package]
+name = "dev_local_vectorstore_hello"
+version = { workspace = true }
+edition = { workspace = true }
+authors = { workspace = true }
+license = { workspace = true }
+publish = false
+
+[dependencies]
+genkit = { path = "../../genkit" }
+# Potentially add genkit_plugin_dev_local_vectorstore later: { path = "../../plugins/dev_local_vectorstore" }
+
+# Add other sample-specific dependencies here

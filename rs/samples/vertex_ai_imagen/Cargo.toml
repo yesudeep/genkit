@@ -1,0 +1,13 @@
+[package]
+name = "vertex_ai_imagen"
+version = { workspace = true }
+edition = { workspace = true }
+authors = { workspace = true }
+license = { workspace = true }
+publish = false
+
+[dependencies]
+genkit = { path = "../../genkit" }
+# Potentially add genkit_plugin_vertex_ai later: { path = "../../plugins/vertex_ai" }
+
+# Add other sample-specific dependencies here

@@ -1,0 +1,13 @@
+[package]
+name = "menu"
+version = { workspace = true }
+edition = { workspace = true }
+authors = { workspace = true }
+license = { workspace = true }
+publish = false
+
+[dependencies]
+genkit = { path = "../../genkit" }
+# This sample might depend on multiple plugins later
+
+# Add other sample-specific dependencies here

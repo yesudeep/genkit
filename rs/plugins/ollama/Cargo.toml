@@ -1,0 +1,16 @@
+[package]
+name = "genkit-plugin-ollama"
+version = { workspace = true }
+edition = { workspace = true }
+authors = { workspace = true }
+license = { workspace = true }
+publish = false
+
+[lib]
+name = "genkit_plugin_ollama"
+path = "src/lib.rs"
+
+[dependencies]
+genkit = { path = "../../genkit" }
+
+# Add plugin-specific dependencies here (e.g., Ollama client, http clients)

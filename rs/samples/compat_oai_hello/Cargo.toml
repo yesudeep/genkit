@@ -1,0 +1,13 @@
+[package]
+name = "compat_oai_hello"
+version = { workspace = true }
+edition = { workspace = true }
+authors = { workspace = true }
+license = { workspace = true }
+publish = false
+
+[dependencies]
+genkit = { path = "../../genkit" }
+# Potentially add genkit_plugin_compat_oai later: { path = "../../plugins/compat_oai" }
+
+# Add other sample-specific dependencies here

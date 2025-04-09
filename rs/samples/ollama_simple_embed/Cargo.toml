@@ -1,0 +1,13 @@
+[package]
+name = "ollama_simple_embed"
+version = { workspace = true }
+edition = { workspace = true }
+authors = { workspace = true }
+license = { workspace = true }
+publish = false
+
+[dependencies]
+genkit = { path = "../../genkit" }
+# Potentially add genkit_plugin_ollama later: { path = "../../plugins/ollama" }
+
+# Add other sample-specific dependencies here

@@ -1,0 +1,13 @@
+[package]
+name = "google_genai_context_caching"
+version = { workspace = true }
+edition = { workspace = true }
+authors = { workspace = true }
+license = { workspace = true }
+publish = false
+
+[dependencies]
+genkit = { path = "../../genkit" }
+# Potentially add genkit_plugin_google_genai later: { path = "../../plugins/google_genai" }
+
+# Add other sample-specific dependencies here
